@@ -1,0 +1,103 @@
+* {
+    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.tela-login,
+.tela-cadastro {
+    display: flex;
+    width: 100%;
+    min-height:100vh;
+}
+
+.painel-login,
+.tela-cadastro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.texto-login {
+    color: #171717;
+    font-size: 50px;
+    font-family: var(--fonte-destaque);
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.campo-login {
+    width: 100% auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 13px;
+}
+
+.campo-login label {
+    font-family: var(--fonte-corpo);
+    font-size: 18px;
+    color: #171717;
+}
+
+.campo-login input {
+    width: 350px;
+    height: 30px;
+    padding: 6px 8px;
+
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #c5c5c5;
+
+    font-family: var(--fonte-corpo);
+    font-size: 14px;
+    color: #222222;
+}
+
+.botao-entrar {
+    width: 250px;
+    height: 60px;
+    background-color: var(--cor-botao);
+    border-color: #171717;
+    border: none;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: var(--fonte-destaque) ;
+    font-size: 35px;
+    color: var(--cor-fundo);
+}
+
+.botao-entrar:hover {
+    background-color: #91434c;
+    cursor: pointer;
+}
+
+.painel-login a {
+    color: var(--cor-texto);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.painel-imagem {
+    width: 932px;
+    height: 100vh; /*possível descentralização nos inputs*/
+    flex-shrink: 0;
+
+    background-image: url("../../assets/images/imagem-login.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
