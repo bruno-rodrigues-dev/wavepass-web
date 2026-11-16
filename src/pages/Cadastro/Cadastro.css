@@ -1,25 +1,20 @@
-* {
-    background-color: var(--cor-fundo);
-    margin: 0;
-    padding: 0;
-}
-
-
-html,
-body {
+.tela-cadastro {
+    background-color: #FEECD1;
+    display: flex;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     overflow: hidden;
 }
 
-.tela-login,
-.tela-cadastro {
+.painel-cadastro {
+    flex: 1;
     display: flex;
-    width: 100%;
-    min-height:100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
-.texto-login,
 .texto-cadastro {
     color: #171717;
     font-size: 50px;
@@ -28,16 +23,7 @@ body {
     margin-bottom: 100px;
 }
 
-.texto-login {
-    color: #171717;
-    font-size: 50px;
-    font-family: var(--fonte-destaque);
-    font-weight: 400;
-    margin-bottom: 100px;
-}
-
 .campo-login {
-    width: 100% auto;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -54,11 +40,8 @@ body {
     width: 350px;
     height: 30px;
     padding: 6px 8px;
-
     background-color: #ffffff;
-    border: 1px solid;
-    border-color: #c5c5c5;
-
+    border: 1px solid #c5c5c5;
     font-family: var(--fonte-corpo);
     font-size: 14px;
     color: #222222;
@@ -68,11 +51,10 @@ body {
     width: 250px;
     height: 60px;
     background-color: var(--cor-botao);
-    border-color: #171717;
     border: none;
     margin-top: 80px;
     margin-bottom: 80px;
-    font-family: var(--fonte-destaque) ;
+    font-family: var(--fonte-destaque);
     font-size: 35px;
     color: var(--cor-fundo);
 }
@@ -88,15 +70,12 @@ body {
     cursor: pointer;
 }
 
-
 .painel-imagem {
     width: 932px;
-    height: 100vh; /*possível descentralização nos inputs*/
+    height: 100vh;
     flex-shrink: 0;
-
     background-image: url("../../assets/images/imagem-login.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
-

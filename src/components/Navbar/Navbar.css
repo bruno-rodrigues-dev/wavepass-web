@@ -1,0 +1,60 @@
+.navbar-topo {
+    background-color: #FEECD1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 40px;
+}
+
+.navbar-logo {
+    height: 70px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--fonte-corpo);
+    font-size: 15px;
+    color: #171717;
+    text-decoration: none;
+}
+
+.navbar-link i {
+    font-size: 26px;
+    display: flex;
+}
+
+.navbar-perfil {
+    display: flex;
+    font-size: 34px;
+    color: #171717;
+}
+
+.navbar-link:hover,
+.navbar-perfil:hover {
+    color: var(--cor-botao);
+}
+
+.navbar-faixa {
+    background-color: #253B70;
+    padding: 8px 0;
+}
+
+.navbar-categoria {
+    font-family: var(--fonte-destaque);
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #FEECD1;
+}
+
+.navbar-separador {
+    color: #D4A72C;
+    margin: 0 16px;
+}

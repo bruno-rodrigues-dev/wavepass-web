@@ -6,3 +6,13 @@
     --fonte-corpo: 'DM Sans', sans-serif;
     --cor-botao: #722F37;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
