@@ -1,0 +1,50 @@
+.tela-erro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.erro-texto {
+    max-width: 420px;
+}
+
+.erro-texto h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 22px;
+    font-weight: 400;
+    color: #171717;
+    margin-bottom: 40px;
+}
+
+.erro-texto p {
+    font-family: var(--fonte-corpo);
+    font-size: 16px;
+    line-height: 1.5;
+    color: #171717;
+    margin-bottom: 50px;
+}
+
+.erro-botao {
+    display: inline-block;
+    padding: 8px 28px;
+    background-color: var(--cor-botao);
+    color: var(--cor-fundo);
+    font-family: var(--fonte-destaque);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.erro-botao:hover {
+    background-color: #91434c;
+}
+
+.erro-imagem {
+    width: 400px;
+    max-width: 40%;
+    height: auto;
+}
