@@ -1,11 +1,12 @@
 import Navbar from "../../components/Navbar/Navbar";
+import Destaques from "../../components/Destaques/Destaques";
 
 function Home() {
     return (
         <>
             <Navbar />
             <main className="tela-home">
-                {/* conteúdo da home virá aqui */}
+                <Destaques />
             </main>
         </>
     );
