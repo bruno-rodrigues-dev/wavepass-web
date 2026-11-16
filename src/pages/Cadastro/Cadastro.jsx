@@ -38,7 +38,7 @@ function Cadastro () {
                     Cadastrar
                 </button>
 
-                <Link to="/Login">Já tenho conta!</Link>
+                <Link to="/Login" className="login">Já tenho conta!</Link>
             </section>
             
             <section className="painel-imagem" />

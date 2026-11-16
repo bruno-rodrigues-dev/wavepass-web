@@ -20,7 +20,7 @@ body {
 }
 
 .painel-login,
-.tela-cadastro {
+.painel-cadastro {
     width: 50%;
     display: flex;
     flex-direction: column;
