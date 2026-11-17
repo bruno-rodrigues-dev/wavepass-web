@@ -1,0 +1,63 @@
+.menu-perfil {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    z-index: 10;
+
+    width: 380px;
+    padding: 24px 28px;
+    background-color: #FEECD1;
+    border: 2px solid #171717;
+    box-shadow: 6px 6px 0 #171717;
+}
+
+.menu-perfil-usuario {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu-perfil-avatar {
+    font-size: 70px;
+    color: #171717;
+    display: flex;
+}
+
+.menu-perfil-nome {
+    font-family: var(--fonte-corpo);
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #171717;
+}
+
+.menu-perfil-email {
+    font-family: var(--fonte-corpo);
+    font-size: 16px;
+    color: #171717;
+}
+
+.menu-perfil-sair {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 24px 0 0 auto;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: var(--fonte-corpo);
+    font-size: 22px;
+    font-weight: 600;
+    color: #171717;
+}
+
+.menu-perfil-sair i {
+    font-size: 30px;
+    display: flex;
+}
+
+.menu-perfil-sair:hover {
+    color: var(--cor-botao);
+}

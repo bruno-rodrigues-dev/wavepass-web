@@ -1,0 +1,71 @@
+.categorias {
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.categorias-titulo {
+    font-family: var(--fonte-corpo);
+    font-size: 36px;
+    font-weight: 600;
+    color: #171717;
+    margin-bottom: 40px;
+}
+
+.categorias-lista {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    padding: 4px 8px 12px 4px;
+}
+
+.categoria-botao {
+    flex-shrink: 0;
+    width: 165px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background: #f4f4f6;
+    border: 1px solid #171717;
+    box-shadow: 5px 5px 0 #171717;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.categoria-botao:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0 #171717;
+}
+
+.categoria-botao.ativa {
+    background: linear-gradient(180deg, var(--cor-1), var(--cor-2));
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 #171717;
+}
+
+.categoria-imagem {
+    height: 110px;
+    object-fit: contain;
+}
+
+.categoria-nome {
+    font-family: var(--fonte-destaque);
+    font-size: 20px;
+    color: #263a6b;
+}
+
+.categoria-seta {
+    font-size: 18px;
+    color: #263a6b;
+    display: flex;
+}
+
+.categoria-botao.ativa .categoria-nome,
+.categoria-botao.ativa .categoria-seta {
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #171717;
+}

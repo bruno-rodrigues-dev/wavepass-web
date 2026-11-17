@@ -1,12 +1,44 @@
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import MarqueeModule from "react-fast-marquee";
-const Marquee = MarqueeModule.default ?? MarqueeModule;
 import "./Navbar.css";
 import logo from "../../assets/images/logo.png";
+import MenuPerfil from "../MenuPerfil/MenuPerfil";
+
+const Marquee = MarqueeModule.default ?? MarqueeModule;
 
 const categorias = ["Shows", "Festas", "Teatro", "Exposições", "Gastronomia", "Jogos", "Cinema"];
 
+// fixo por enquanto; depois virá da API de login
+const usuario = {
+    nome: "Usuário Santos",
+    email: "usuario.santos@email.com",
+};
+
 function Navbar() {
+    const [menuAberto, setMenuAberto] = useState(false);
+    const areaPerfil = useRef(null);
+
+    useEffect(() => {
+        function clicarFora(evento) {
+            if (areaPerfil.current && !areaPerfil.current.contains(evento.target)) {
+                setMenuAberto(false);
+            }
+        }
+
+        function apertarEsc(evento) {
+            if (evento.key === "Escape") setMenuAberto(false);
+        }
+
+        document.addEventListener("mousedown", clicarFora);
+        document.addEventListener("keydown", apertarEsc);
+
+        return () => {
+            document.removeEventListener("mousedown", clicarFora);
+            document.removeEventListener("keydown", apertarEsc);
+        };
+    }, []);
+
     return (
         <header className="navbar">
             <div className="navbar-topo">
@@ -15,19 +47,24 @@ function Navbar() {
                 </Link>
 
                 <nav className="navbar-links">
-                    <Link to="/meus-eventos" className="navbar-link">
-                        <i className="fi fi-rr-calendar"></i>
-                        Meus Eventos
+                    <Link to="/carrinho" className="navbar-carrinho">
+                        <i className="fi fi-rr-shopping-cart"></i>
+                        Carrinho
                     </Link>
 
-                    <Link to="/meus-ingressos" className="navbar-link">
-                        <i className="fi fi-rr-ticket"></i>
-                        Meus Ingressos
-                    </Link>
+                    <div className="navbar-usuario" ref={areaPerfil}>
+                        <button
+                            type="button"
+                            className="navbar-icone"
+                            aria-label="Perfil"
+                            aria-expanded={menuAberto}
+                            onClick={() => setMenuAberto(!menuAberto)}
+                        >
+                            <i className="fi fi-rr-circle-user"></i>
+                        </button>
 
-                    <Link to="/perfil" className="navbar-perfil" aria-label="Perfil">
-                        <i className="fi fi-rr-circle-user"></i>
-                    </Link>
+                        {menuAberto && <MenuPerfil usuario={usuario} />}
+                    </div>
                 </nav>
             </div>
 
