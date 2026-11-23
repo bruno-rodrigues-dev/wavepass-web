@@ -1,0 +1,73 @@
+.filtro-valor {
+    position: relative;
+}
+
+.filtro-valor .eventos-filtro {
+    justify-content: space-between;
+    font-family: var(--fonte-corpo);
+    font-size: 14px;
+    color: #9a9a9a;
+    cursor: pointer;
+    text-align: left;
+}
+
+.filtro-valor .eventos-filtro.selecionado {
+    color: #171717;
+}
+
+.filtro-valor-painel {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 260px;
+    padding: 18px 20px;
+
+    background-color: #ffffff;
+    border: 1px solid #171717;
+    box-shadow: 4px 4px 0 #171717;
+}
+
+.filtro-valor-titulo {
+    float: left;
+    margin-bottom: 6px;
+    font-family: var(--fonte-corpo);
+    font-size: 18px;
+    font-weight: 600;
+    color: #171717;
+}
+
+.filtro-valor-opcao {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--fonte-corpo);
+    font-size: 15px;
+    color: #171717;
+    cursor: pointer;
+}
+
+.filtro-valor-opcao input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: #171717;
+    cursor: pointer;
+}
+
+.filtro-valor-limpar {
+    align-self: flex-start;
+    margin-top: 6px;
+    padding: 0;
+    background: none;
+    border: none;
+    font-family: var(--fonte-corpo);
+    font-size: 14px;
+    color: var(--cor-botao);
+    text-decoration: underline;
+    cursor: pointer;
+}

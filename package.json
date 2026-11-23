@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^3.3.1",
     "react": "^19.3.1",
+    "react-day-picker": "^10.0.2",
     "react-dom": "^19.3.1",
-    "react-router-dom": "^7.18.5"
+    "react-fast-marquee": "^1.6.5",
+    "react-router-dom": "^7.18.5",
+    "swiper": "^14.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

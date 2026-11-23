@@ -11,3 +11,10 @@ export function formatarData(dataIso) {
 
     return `${capitalizar(semana)}, ${data.getDate()} de ${capitalizar(mes)} às ${hora}`;
 }
+
+export function formatarDiaMes(dataIso) {
+    const data = new Date(dataIso);
+    const mes = data.toLocaleDateString("pt-BR", { month: "short" }).replace(".", "");
+
+    return `${data.getDate()} ${capitalizar(mes)}`;
+}

@@ -4,7 +4,8 @@ import Cadastro from '../pages/Cadastro/Cadastro'
 import ErrorBoundary from '../components/ErrorBoundary'
 import Erro from "../pages/Erro/Erro"
 import NotFound from "../pages/NotFound/NotFound"
-import Home from "../pages/Home/Home";;
+import Home from "../pages/Home/Home"
+import Evento from "../pages/Evento/Evento";;
 
 function AppRoutes() {
     return (
@@ -15,9 +16,13 @@ function AppRoutes() {
                 <Route path="/Home" element={<Home />} />
                 <Route path="/erro" element={<Erro />} />
                 <Route path="*" element={<NotFound />} />
+                <Route path="/evento/:id" element={<Evento />} />
             </Routes>
         </ErrorBoundary>
     )
 }
 
 export default AppRoutes
+
+
+

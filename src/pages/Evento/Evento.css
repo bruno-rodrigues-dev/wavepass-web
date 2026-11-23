@@ -1,0 +1,85 @@
+.evento {
+    max-width: 900px;
+    margin: 40px auto 80px;
+    padding: 0 20px;
+}
+
+.evento-banner {
+    display: block;
+    width: 100%;
+    aspect-ratio: 900 / 322;
+    object-fit: cover;
+}
+
+.evento-titulo {
+    margin-top: 24px;
+    font-family: var(--fonte-corpo);
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #171717;
+}
+
+.evento-local {
+    margin-top: 10px;
+    font-family: var(--fonte-corpo);
+    font-size: 16px;
+    color: #171717;
+}
+
+.evento-descricao {
+    max-width: 380px;
+    margin-top: 16px;
+    font-family: var(--fonte-corpo);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #171717;
+}
+
+.evento-sessoes {
+    margin-top: 50px;
+    max-width: 460px;
+}
+
+.evento-sessao {
+    padding: 20px 0 40px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.evento-sessao-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 0;
+    border-top: 1px solid #171717;
+    border-bottom: 1px solid #171717;
+    font-family: var(--fonte-corpo);
+    font-size: 12px;
+    color: #171717;
+}
+
+.evento-sessao-data {
+    padding-right: 14px;
+    border-right: 1px solid #171717;
+}
+
+.evento-horarios {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.evento-horario {
+    padding: 8px 12px;
+    background-color: #b92b27;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fonte-corpo);
+    font-size: 12px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.evento-horario:hover {
+    background-color: #91434c;
+}
