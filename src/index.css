@@ -5,6 +5,8 @@
     --fonte-destaque: 'Caprasimo', cursive;
     --fonte-corpo: 'DM Sans', sans-serif;
     --cor-botao: #722F37;
+    --cor-botaoAdm: #253B70;
+    --cor-botaoAdmHover: #4c5e86;
 }
 
 * {
