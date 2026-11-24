@@ -36,9 +36,44 @@
     color: #171717;
 }
 
-.evento-sessoes {
+.evento-corpo {
+    display: grid;
+    grid-template-columns: minmax(0, 460px) 1fr;
+    gap: 60px;
+    align-items: start;
     margin-top: 50px;
+}
+
+.evento-sessoes {
     max-width: 460px;
+}
+
+.evento-calendario {
+    justify-self: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: color-mix(in srgb, var(--cor-evento) 15%, white);
+
+    --rdp-accent-color: var(--cor-evento);
+    --rdp-accent-background-color: var(--cor-evento);
+    --rdp-day_button-border-radius: 50%;
+    font-family: var(--fonte-corpo);
+}
+
+.evento-calendario .dia-com-sessao .rdp-day_button {
+    background-color: var(--cor-evento);
+    color: var(--cor-evento-texto);
+    font-weight: 700;
+}
+
+.evento-calendario .rdp-selected .rdp-day_button {
+    background-color: color-mix(in srgb, var(--cor-evento) 55%, black);
+    border-color: color-mix(in srgb, var(--cor-evento) 55%, black);
+    color: #ffffff;
+}
+
+.evento-calendario .rdp-disabled {
+    opacity: 0.35;
 }
 
 .evento-sessao {
@@ -71,15 +106,16 @@
 
 .evento-horario {
     padding: 8px 12px;
-    background-color: #b92b27;
+    background-color: var(--cor-evento);
+    color: var(--cor-evento-texto);
     border: none;
     border-radius: 4px;
     font-family: var(--fonte-corpo);
     font-size: 12px;
-    color: #ffffff;
     cursor: pointer;
 }
 
 .evento-horario:hover {
-    background-color: #91434c;
+    background-color: var(--cor-evento);
+    filter: brightness(0.85);
 }
