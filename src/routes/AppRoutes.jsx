@@ -5,7 +5,8 @@ import ErrorBoundary from '../components/ErrorBoundary'
 import Erro from "../pages/Erro/Erro"
 import NotFound from "../pages/NotFound/NotFound"
 import Home from "../pages/Home/Home"
-import Evento from "../pages/Evento/Evento";;
+import Evento from "../pages/Evento/Evento";import CadastraAdmin from '../pages/Admin/CadastraAdmin/CadastraAdmin'
+;
 
 function AppRoutes() {
     return (
@@ -17,6 +18,9 @@ function AppRoutes() {
                 <Route path="/erro" element={<Erro />} />
                 <Route path="*" element={<NotFound />} />
                 <Route path="/evento/:id" element={<Evento />} />
+
+                {/* Rotas dos adms */}
+                <Route path="/admin/cadastroDeParceiros" element={<CadastraAdmin />} />
             </Routes>
         </ErrorBoundary>
     )
