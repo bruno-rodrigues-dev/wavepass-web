@@ -12,6 +12,7 @@
   "dependencies": {
     "@flaticon/flaticon-uicons": "^3.3.1",
     "day": "^0.0.2",
+    "node-vibrant": "^4.0.4",
     "picker": "^0.1.4",
     "react": "^19.3.1",
     "react-day-picker": "^10.0.2",
