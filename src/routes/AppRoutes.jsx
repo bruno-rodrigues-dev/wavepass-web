@@ -20,7 +20,7 @@ function AppRoutes() {
                 <Route path="/evento/:id" element={<Evento />} />
 
                 {/* Rotas dos adms */}
-                <Route path="/admin/cadastroDeParceiros" element={<CadastraAdmin />} />
+                <Route path="/waveteam/cadastroDeParceiros" element={<CadastraAdmin />} />
             </Routes>
         </ErrorBoundary>
     )
